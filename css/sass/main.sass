@@ -1,0 +1,675 @@
+
+
+body
+	font-family: "Raleway", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: black
+
+
+			
+		
+header
+	z-index: 1000
+	position: relative
+	
+	.home
+		background-image: url(../img/cover.jpg)
+		background-repeat: no-repeat
+		background-attachment: fixed
+		width: 100%
+		background-size: cover
+		height: 100vh
+		min-height: 400px
+		background-attachment: fixed
+		.img_wrap
+			background-image: url(../img/pattern.png)
+			background-repeat: repeat
+			height: 100vh
+			min-height: 400px
+			width: 100%
+			background-attachment: fixed
+			#top_mame
+				text-align: center
+				margin-top: 35vh
+				h1
+					font-size: 38px
+					color: white
+					line-height: 55px
+					font-weight: bold
+					font-family: "Raleway", sans-serif
+					margin: 0px
+					text-transform: uppercase
+					text-align: center
+				p 
+					color: white
+					font-size: 24px
+		.navigation
+			position: absolute
+			bottom: 40px
+			left: 47%
+			
+			
+			width: 45px
+			height: 47px
+			text-align: center
+			display: inline-block
+			border: 3px solid white
+			border-radius: 50%
+					
+			i 
+				font-size: 22px
+				height: 36px
+				color: white
+				animation-name: spin
+				animation-duration: 1s
+				animation-iteration-count: infinite
+				animation-timing-function: linear
+				animation-delay: 1s
+				@keyframes spin
+					from
+						padding-top: 0
+					70%
+						opacity: 1	
+					to 
+						padding-top: 20px
+						opacity: 0
+#top_nav
+	background-color: white
+	width: 100%
+	
+	z-index: 1000
+	h2
+		text-transform: uppercase
+		font-style: italic
+		font-weight: bold
+		font-size: 25px	
+		margin: 0 0
+		padding-top: 3px
+		
+	nav
+		
+		ul
+			margin: 0
+			padding: 4px
+		li 
+			display: inline-block
+			margin-left: 25px
+			font-size: 12px
+			text-transform: uppercase
+			padding-top: 8px
+		.active a 
+			color: #e33a3a
+			text-decoration: none
+		li:first-child
+			
+			margin-left: 0
+		a 
+			color: grey
+			transition: 0.2s all ease-out
+		
+		a:hover
+			color: #e33a3a
+			
+		a:focus
+			text-decoration: none
+		input[type="checkbox"]
+			display: none
+			transition: 0.1s	
+
+		label    
+		   	display: none
+		    border: 1px solid #fff  
+		    padding: 5px 10px
+		    cursor: pointer
+   
+		
+
+.service, .works, .skills, .say
+	background-color: #fceaec
+	text-align: center
+	padding-top: 18vh
+	display: inline-block
+	width: 100%
+	padding-bottom: 15vh
+	
+	h3
+		font-size: 35px
+		text-transform: uppercase
+		text-align: center
+		font-weight: bold
+		margin: auto
+		float: none
+		line-height: 40px
+	p 
+		text-align: center
+		float: none
+		margin: auto
+		
+	font-size: 18px
+	line-height: 28px
+	.line 
+		float: none
+		width: 100px
+		height: 1px
+		background-color: grey
+		margin: 4vh auto 
+	.item
+		margin-top: 40px
+		.item_1
+			background-color: white
+			padding: 35px 30px
+			margin-bottom: 15px
+			box-shadow: 1px 7px 35px -21px #000000
+			i
+				font-size: 32px
+				
+			h4
+				font-size: 13px
+				text-transform: uppercase
+				margin: 15px 0px 15px 0px
+				
+			p 
+				font-weight: normal
+				font-size: 14px
+.slideUp
+	animation-name: slideUp
+	animation-duration: 1s 		 
+	animation-timing-function: ease-in-out    
+	visibility: visible !important
+	@keyframes slideUp 
+    	0% 
+        	transform: translateY(50%)
+    	100% 
+        	transform: translateY(0%)
+
+.slideRight
+    animation-name: slideRight 
+    animation-duration: 2s 
+    animation-timing-function: ease-in-out     
+    visibility: visible !important
+
+  
+@keyframes slideRight 
+    0%
+        transform: translateX(-150%)
+    50%
+    	transform: translateX(-50%)
+    100% 
+        transform: translateX(0%)
+
+.slideLeft
+    animation-name: slideLeft
+    animation-duration: 2s 
+    animation-timing-function: ease-in-out     
+    visibility: visible !important
+
+  
+@keyframes slideLeft
+    0%
+        transform: translateX(150%)
+    50%
+    	transform: translateX(50%)
+   
+    100% 
+        transform: translateX(0%)
+     
+
+.hidden
+	opacity:0 
+
+.visible
+	opacity:1
+
+
+.works
+ 	background-color: white
+ 	.anim_block
+ 			margin-bottom: 40px
+
+
+ 	figure
+ 		.effect-bubba 
+			background-color: #9e5406
+			margin-bottom: 20px
+		figcaption
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			
+
+		.effect-bubba img 
+			opacity: 0.7
+			-webkit-transition: opacity 0.35s
+			transition: opacity 0.35s
+			height: auto
+			width: 100%
+			position: relative
+			
+	
+
+		.effect-bubba:hover img 
+			opacity: 0.4
+
+
+		.effect-bubba figcaption::before,
+		.effect-bubba figcaption::after
+			position: absolute
+			top: 30px
+			right: 30px
+			bottom: 30px
+			left: 30px
+			content: ''
+			opacity: 0
+			transition: opacity 0.35s, transform 0.35s
+
+
+		.effect-bubba figcaption::before 
+			border-top: 1px solid #fff
+			border-bottom: 1px solid #fff
+			-webkit-transform: scale(0,1)
+			transform: scale(0,1)
+		
+
+		.effect-bubba figcaption::after 
+			border-right: 1px solid #fff
+			border-left: 1px solid #fff
+			-webkit-transform: scale(1,0)
+			transform: scale(1,0)
+		
+
+		.effect-bubba h2 
+			padding-top: 10%
+			-webkit-transition: -webkit-transform 0.35s
+			transition: transform 0.35s
+			-webkit-transform: translate3d(0,-20px,0)
+			transform: translate3d(0,-20px,0)
+			color: white
+
+			
+
+		.effect-bubba p 
+			padding: 20px 2.5em
+			opacity: 0
+			transition: opacity 0.35s, transform 0.35s
+			-webkit-transform: translate3d(0,20px,0)
+			transform: translate3d(0,20px,0)
+			color: white
+			
+
+		.effect-bubba:hover figcaption::before,
+		.effect-bubba:hover figcaption::after 
+			opacity: 1
+			-webkit-transform: scale(1)
+			transform: scale(1)
+		
+
+		figure.effect-bubba:hover h2,
+		figure.effect-bubba:hover p 
+			opacity: 1
+			-webkit-transform: translate3d(0,0,0)
+			transform: translate3d(0,0,0)
+		
+	
+.fadeIn
+	animation-name: fadeIn
+	animation-duration: 3s
+	animation-timing-function: ease-in-out     
+	visibility: visible !important 
+@keyframes fadeIn
+	0% 
+		transform: scale(0.4)
+		opacity: 0.0      
+      
+	100% 
+		transform: scale(1)
+		opacity: 1
+           
+.skills
+	.progres
+		height: 250px
+		text-align: center
+		margin-top: 40px
+		input.dial, input.dial_1, input.dial_2, input.dial_3
+			display: none 
+			height: 1px
+		p 
+					
+			top: -149px
+			position: relative
+			font-size: 32px
+			text-align: center
+			padding: 0
+			color:grey
+		h4
+			text-transform: uppercase
+			font-size: 12px
+			position: relative
+			top: -70px
+	.my_skills
+		margin-bottom: 60px
+		.slideUp
+			animation-name: slideUp	 
+			animation-duration: 1s 	 
+			animation-timing-function: ease-in-out    	 
+			visibility: visible !important
+		@keyframes slideUp 
+			0% 
+				transform: translateY(50%)
+			100% 
+				transform: translateY(0%)	
+.here_me
+	text-align: center
+	background-image: url(../img/item-3.jpg)
+	color: white	
+	h5
+		text-transform: uppercase
+		font-size: 22px
+		margin: 50px auto 0px auto
+		
+		
+	p 
+		font-size: 25px
+		margin: 25px
+	.hire_me
+		background-color: #fceaec
+		color: black
+		padding: 8px 20px
+		text-transform: uppercase
+		border-radius: 5px
+		font-size: 15px
+		margin: 20px auto 40px auto
+	.hire_me:hover
+		background-color: white
+	.myself
+		.slideRight
+	    animation-name: slideRight 
+	    animation-duration: 2s 
+	    animation-timing-function: ease-in-out     
+	    visibility: visible !important
+
+	  
+		@keyframes slideRight 
+		    0%
+		        transform: translateX(-150%)
+		    50%
+		    	transform: translateX(-50%)
+		    100% 
+		        transform: translateX(0%)
+	.button
+		.slideRight
+	    animation-name: slideRight 
+	    animation-duration: 1s 
+	    animation-timing-function: ease-in-out     
+	    visibility: visible !important
+
+	  
+		@keyframes slideRight 
+		    0%
+		        transform: translateX(-150%)
+		    100% 
+		        transform: translateX(0%)
+.testimonails
+	background-color: #fceaec
+.cbp-qtrotator
+	position: relative
+	width: 100%
+	min-height: 400px
+	background-color: #fceaec
+
+
+.cbp-qtrotator .cbp-qtcontent 
+	position: absolute
+	min-height: 200px
+	border-top: 1px solid #f4f4f4
+	border-bottom: 1px solid #f4f4f4
+	padding: 2em 0
+	top: 0
+	z-index: 0
+	opacity: 0
+	width: 100%
+
+
+.no-js .cbp-qtrotator .cbp-qtcontent 
+	border-bottom: none
+
+
+/* Currently visible */
+.cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
+.no-js .cbp-qtrotator .cbp-qtcontent 
+	position: relative
+	z-index: 100
+	pointer-events: auto
+	opacity: 1
+
+
+.cbp-qtrotator .cbp-qtcontent:before,
+.cbp-qtrotator .cbp-qtcontent:after 
+	content: " "
+	display: table
+
+
+.cbp-qtrotator .cbp-qtcontent:after 
+	clear: both
+
+
+.cbp-qtprogress
+	position: absolute
+	background: #47a3da
+	height: 1px
+	width: 0%
+	top: 0
+	z-index: 1000
+
+.cbp-qtrotator blockquote 
+	margin: 0
+	padding: 0
+
+
+.cbp-qtrotator blockquote p 
+	font-size: 2em
+	color: #888
+	font-weight: 300
+	margin: 0.4em 0 1em
+
+
+.cbp-qtrotator blockquote footer
+	font-size: 1.2em
+
+
+.cbp-qtrotator blockquote footer:before
+	content: ' '
+
+
+.cbp-qtrotator .cbp-qtcontent img 
+	float: right
+	margin-left: 3em
+
+.contact
+	.say
+		background-color: white
+		padding-bottom: 30px
+
+
+	.massage
+		margin: auto
+		float: none	
+		background-color: white
+		label
+			display: block
+			input 	
+				
+				border: 1px grey solid
+				width: 100%
+				height: 35px
+				margin: 8px 0
+				padding-left: 10px
+			input:focus
+				border: 2px grey solid			
+		textarea
+			width: 100%
+			border: 1px grey solid
+			display: inline-block
+			padding-left: 10px
+			margin-top: 8px
+		textarea:focus
+			border: 2px grey solid
+		button
+			width: 100%
+			background-color: #232121
+			color: white
+			text-transform: uppercase
+			padding-top: 8px
+			padding-bottom: 6px
+			font-size: 13px
+		button:hover
+			background-color: black
+	.pullDown
+		animation-name: pullDown
+		animation-duration: 1s 
+		animation-timing-function: ease-out    
+		transform-origin: 70% 0%
+ 
+		@keyframes pullDown 
+			0% 
+			 	transform: scaleY(0.6)
+			100% 
+			    transform: scaleY(1)
+footer.black
+	background-color: #232121
+	margin-top: 40px
+
+	.bottom
+		float: none
+		margin: 35px auto
+		
+		ul
+			text-align: center
+			li
+				display: inline-block
+				margin-left: 10px
+				text-align: center
+			i 
+				font-size: 20px
+				color: grey
+				border: 1px grey solid
+				border-radius: 3px
+				padding: 8px 8px
+				text-align: center
+				width: 38px
+			i:hover
+				color: white
+				border:2px solid white
+				font-size: 30px
+				padding:12px 12px
+				width: 50px
+				text-align: center
+						
+		p 
+			text-align: center
+			color: white 
+			font-size: 15px
+			.fa-heart 
+				color: red
+				font-size: 22px
+				
+
+	ul.alex
+		li 
+			color: white
+			margin-left: 2px
+			span 
+				color: red
+				border-bottom: 1px dotted white
+				&:hover
+					color: blue
+
+
+			li:nth-child(1)
+				border-right: 1px white solid
+				padding-right: 5px
+#top
+
+	img
+		width: 25px
+		height: 35px
+
+   
+			
+
+
+
+
+		
+
+
+
+			
+
+
+			
+
+
+
+
+		
+
+			
+
+								
+
+ 		
+ 				
+
+
+
+
+ 
+ 		
+
+ 		
+       
+
+      
+
+	
+
+
+		
+
+
+
+
+
+	
+
+
+
+	
+	
+	
+	
+
+		
+
+
+
+	
+
+
+
+	
+
